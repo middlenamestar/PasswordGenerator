@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+var generateButton = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
@@ -10,8 +10,13 @@ function writePassword() {
 
 }
 
+
+
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateButton.addEventListener("click", writePassword); //calling the already assigned function writePassword
+
+
+
 
 
 ////////////
@@ -49,3 +54,7 @@ generateBtn.addEventListener("click", writePassword);
 
 //ALSO BEFORE U GET STARTED, U NEED TO CLONE A NEW REPO DOWN FROM GITHUB.
 //;)
+
+
+// id #password TEXTAREA
+// id #generate BUTTON

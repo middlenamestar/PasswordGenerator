@@ -42,6 +42,13 @@ function generatePassword(){
           alert("please choose at least one character type");
         }
       }
+  for (var i = 0; i < length; i++) { //for loop you can use on string or array //this is for the length
+  //execute the codes in here as many times as the length in the condition
+    var indexNumber = Math.floor(Math.random() * allChars.length); //returns the index number. you have a long ass string now added with a lot of diff char types, this formula is only going to choose 1 number from the now long ass string, but it's ok bc that's what the loop is for - the loops will keep choosing another number to add to the final empty string.
+    var character = allChars.charAt(indexNumber); //returns the actual character of the specified index, so the finalPassword will have actual letters and whatnot, not just obscure index numbers.
+    finalPassword += character; //we're adding the characters returned to the finalPassword empty string.
+  }
+  return finalPassword;
 }
 
 // Add event listener to generate button

@@ -4,16 +4,46 @@ var generateButton = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector("#password"); 
 
   passwordText.value = password;
 
 }
 
+function generatePassword(){
+  // var length = prompt("how long would you like your password to be? (please choose between 8-128 characters)");
+  var lowercase = confirm("would you like to include lowercase characters?");
+    if(!lowercase){
+      return;
+    }
+  var uppercase = confirm("would you like to include uppercase letters?");
+    if(!uppercase){
+      return;
+    }
+  var numeric = confirm("would you like to include numeric characters?");
+    if(!numeric){
+      return;
+    }
+  var specialChar = confirm("would you like your password to include special characters?");
+    if(!specialChar){
+      return;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 // Add event listener to generate button
 generateButton.addEventListener("click", writePassword); //calling the already assigned function writePassword
+// when you click the button it's going to start creating a password -> this is when the prompt should show up.
 
 
 

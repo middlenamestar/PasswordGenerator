@@ -10,4 +10,4 @@ First, click the Generate Password button. Then, follow the prompts. Click OK to
 ![Password Generator application features a white background with heading: "Password Generator." There is a central box titled "Generate a Password," containing a textbox that reads "Your Secure Password," and a red button that says "Generate Password."](/images/PasswordGenerator_Website.png)
 
 ## Deployment
-This application is deployed with GitHub Pages at https://middlenamestar.github.io/PasswordGenerator/.
+This application is deployed with GitHub Pages at https://middlenamestar.github.io/password-generator/.
